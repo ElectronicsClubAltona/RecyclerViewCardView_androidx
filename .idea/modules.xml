@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecyclerViewCardView.iml" filepath="$PROJECT_DIR$/RecyclerViewCardView.iml" group="RecyclerViewCardView" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="RecyclerViewCardView/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RecyclerViewCardView_androidx.iml" filepath="$PROJECT_DIR$/.idea/modules/RecyclerViewCardView_androidx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/RecyclerViewCardView_androidx.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/RecyclerViewCardView_androidx.app.iml" />
     </modules>
   </component>
 </project>
