@@ -9,8 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-
-
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
     private final ArrayList<DataModel> dataSet;
@@ -41,8 +39,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
         view.setOnClickListener(MainActivity.myOnClickListener);
 
-        MyViewHolder myViewHolder = new MyViewHolder(view);
-        return myViewHolder;
+        return new MyViewHolder(view);
     }
 
     @Override
