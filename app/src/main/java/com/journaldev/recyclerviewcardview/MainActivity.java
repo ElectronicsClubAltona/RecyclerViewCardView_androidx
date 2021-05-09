@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
-        data = new ArrayList<DataModel>();
+        data = new ArrayList<>();
         for (int i = 0; i < MyData.nameArray.length; i++) {
             data.add(new DataModel(
                     MyData.nameArray[i],
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     MyData.drawableArray[i]
             ));
         }
-        removedItems = new ArrayList<Integer>();
+        removedItems = new ArrayList<>();
         adapter = new CustomAdapter(data);
         recyclerView.setAdapter(adapter);
     }
