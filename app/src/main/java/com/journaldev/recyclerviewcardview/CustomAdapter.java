@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
-    private ArrayList<DataModel> dataSet;
+    private final ArrayList<DataModel> dataSet;
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
 

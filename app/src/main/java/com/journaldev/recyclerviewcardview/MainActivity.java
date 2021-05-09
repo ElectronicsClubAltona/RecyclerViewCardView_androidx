@@ -16,7 +16,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-
     private static RecyclerView.Adapter adapter;
     private static RecyclerView recyclerView;
     private static ArrayList<DataModel> data;
@@ -46,9 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     MyData.drawableArray[i]
             ));
         }
-
         removedItems = new ArrayList<Integer>();
-
         adapter = new CustomAdapter(data);
         recyclerView.setAdapter(adapter);
     }
@@ -56,10 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static class MyOnClickListener implements View.OnClickListener {
 
-        private final Context context;
-
         private MyOnClickListener(Context context) {
-            this.context = context;
         }
 
         @Override
@@ -92,7 +86,6 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         super.onOptionsItemSelected(item);
@@ -106,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return true;
     }
-
     private void addRemovedItemToList() {
         int addItemAtListPosition = 3;
         data.add(addItemAtListPosition, new DataModel(
